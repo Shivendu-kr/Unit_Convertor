@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+    <html lang="en">
+       <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Unit Converter</title>
+    </head>
+    <body>
+    <div id="menu">
+    <h1>Unit Converter</h1>
+    <h6>Shivendu</h6>
+    <input type="button" id="buttl" value="Length" onclick="showLen()"><br><br>
+    <input type="button" id="buttm" value="Mass" onclick="showMas()"><br><br>
+    <input type="button" id="buttti" value="Time" onclick="showTim()"><br><br>
+    <input type="button" id="butttm" value="Temp" onclick="showTemp()"><br><br>
+    <input type="button" id="butta" value="Area" onclick="showAr()"><br><br>
+    <input type="button" id="buttv" value="Volume" onclick="showVol()"><br><br>
+    <input type="button" id="butts" value="Speed" onclick="showSpd()">
+    </div>
+    
+    <div id="length">
+    <p id="title">Length<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputl" onInput="resultLen()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="froml" onChange="resultLen()">
+        <option value="1" select="selected">metre</option>
+        <option value="2">kilometre</option>
+        <option value="3">inch</option>
+        <option value="4">foot</option>
+        <option value="5">mile</option>
+        <option value="6">yard</option>
+        <option value="7">centimetre</option>
+        <option value="8">nautical mile</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="tol" onChange="resultLen()">
+        <option value="1" select="selected">metre</option>
+        <option value="2">kilometre</option>
+        <option value="3">inch</option>
+        <option value="4">foot</option>
+        <option value="5">mile</option>
+        <option value="6">yard</option>
+        <option value="7">centimetre</option>
+        <option value="8">nautical mile</option>
+    </select>
+    </form>
+    <br>
+    <p id="ans"></p>
+    </div>
+    
+    <div id="mass">
+    <p id="title">Mass<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputm" onInput="resultMas()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromm" onChange="resultMas()">
+        <option value="1" select="selected">gram</option>
+        <option value="2">kilogram</option>
+        <option value="3">milligram</option>
+        <option value="4">pound</option>
+        <option value="5">ounce</option>
+        <option value="6">imperial ton</option>
+        <option value="7">us ton</option>
+        <option value="8">metric ton</option>
+    </select>
+    <br>
+    <br>
+    To &nbsp; : 
+     <select id="tom" onChange="resultMas()">
+        <option value="1" select="selected">gram</option>
+        <option value="2">kilogram</option>
+        <option value="3">milligram</option>
+        <option value="4">pound</option>
+        <option value="5">ounce</option>
+        <option value="6">imperial ton</option>
+        <option value="7">us ton</option>
+        <option value="8">metric ton</option>
+    </select>
+    </form>
+    <br>
+    <p id="ansm"></p>
+    </div>
+    
+    <div id="time">
+    <p id="title">Time<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputti" onInput="resultTi()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromti" onChange="resultTi()">
+        <option value="1" select="selected">second</option>
+        <option value="2">minute</option>
+        <option value="3">hour</option>
+        <option value="4">day</option>
+        <option value="5">week</option>
+        <option value="6">month</option>
+        <option value="7">year</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="toti" onChange="resultTi()">
+        <option value="1" select="selected">second</option>
+        <option value="2">minute</option>
+        <option value="3">hour</option>
+        <option value="4">day</option>
+        <option value="5">week</option>
+        <option value="6">month</option>
+        <option value="7">year</option>
+    </select>
+    </form>
+    <br>
+    <p id="ansti"></p>
+    </div>
+    
+    <div id="temperature">
+    <p id="title">Temperature<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputte" onInput="resultTe()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromte" onChange="resultTe()">
+        <option value="1" select="selected">celsius</option>
+        <option value="2">fahrenheit</option>
+        <option value="3">kelvin</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="tote" onChange="resultTe()">
+        <option value="1" select="selected">celsius</option>
+        <option value="2">fahrenheit</option>
+        <option value="3">kelvin</option>
+    </select>
+    </form>
+    <br>
+    <p id="anste"></p>
+    </div>
+    
+    <div id="area">
+    <p id="title">Area<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputar" onInput="resultAr()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromar" onChange="resultAr()">
+        <option value="1" select="selected">Sqr m</option>
+        <option value="2">Sqr km</option>
+        <option value="3">Sqr mi</option>
+        <option value="4">Sqr yd</option>
+        <option value="5">Sqr ft</option>
+        <option value="6">Sqr in</option>
+        <option value="7">Hectare</option>
+        <option value="8">Acre</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="toar" onChange="resultAr()">
+        <option value="1" select="selected">Sqr m</option>
+        <option value="2">Sqr km</option>
+        <option value="3">Sqr mi</option>
+        <option value="4">Sqr yd</option>
+        <option value="5">Sqr ft</option>
+        <option value="6">Sqr in</option>
+        <option value="7">Hectare</option>
+        <option value="8">Acre</option>
+    </select>
+    </form>
+    <br>
+    <p id="ansar"></p>
+    </div>
+    
+    <div id="volume">
+    <p id="title">Volume<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputvol" onInput="resultVol()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromvol" onChange="resultVol()">
+        <option value="1" select="selected">Cubic m</option>
+        <option value="2">Litre</option>
+        <option value="3">Cubic cm/Millilitre</option>
+        <option value="4">Cubic foot</option>
+        <option value="5">Cubic inch</option>
+        <option value="6">US gallon</option>
+        <option value="7">Imperial gallon</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="tovol" onChange="resultVol()">
+        <option value="1" select="selected">Cubic m</option>
+        <option value="2">Litre</option>
+        <option value="3">Cubic cm/Millilitre</option>
+        <option value="4">Cubic foot</option>
+        <option value="5">Cubic inch</option>
+        <option value="6">US gallon</option>
+        <option value="7">Imperial gallon</option>
+    </select>
+    </form>
+    <br>
+    <p id="ansvol"></p>
+    </div>
+    
+    <div id="speed">
+    <p id="title">Speed<p>
+    <input type="button" onclick="showMenu()" value="back" id="back"><br><br>
+    <input type="number" id="inputspd" onInput="resultSpd()">
+    <br>
+    <form id="fm">
+    From :
+    <select id="fromspd" onChange="resultSpd()">
+        <option value="1" select="selected">Metre per second</option>
+        <option value="2">Foot per second</option>
+        <option value="3">Kilometre per hour</option>
+        <option value="4">Mile per hour</option>
+        <option value="5">Knot</option>
+    </select>
+    <br>
+    <br>
+    
+    To &nbsp; : 
+    <select id="tospd" onChange="resultSpd()">
+        <option value="1" select="selected">Metre per second</option>
+        <option value="2">Foot per second</option>
+        <option value="3">Kilometre per hour</option>
+        <option value="4">Mile per hour</option>
+        <option value="5">Knot</option>
+    </select>
+    </form>
+    <br>
+    <p id="ansspd"></p>
+    </div>
+    
+ 
+</body>
+</html>

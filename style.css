@@ -1,0 +1,131 @@
+body {
+  background: rgb(170, 162, 165);
+  background: radial-gradient(
+    circle,
+    rgba(170, 162, 165, 1) 0%,
+    rgba(30, 31, 38, 0.8464635854341737) 71%
+  );
+  color: #ffffff;
+}
+
+#menu {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tw Cen MT;
+  font-size: 35px;
+}
+
+#title {
+  text-align: center;
+  font-family: Tw Cen MT;
+  color: #98ffcc;
+  font-size: 18px;
+}
+
+h6 {
+  text-align: center;
+  font-family: Tw Cen MT;
+  color: #47f1f4;
+  font-size: 13px;
+}
+
+#buttl,
+#buttm,
+#buttti,
+#butttm,
+#butta,
+#buttv,
+#butts {
+  height: 50px;
+  width: 80px;
+  border: 4px solid #55e5f8;
+  border-radius: 10%;
+  background-color: #2f2f2f;
+  color: #eba518;
+  font-family: Tw Cen MT;
+  font-size: 15px;
+}
+
+#length,
+#mass,
+#time,
+#temperature,
+#area,
+#volume,
+#speed {
+  display: none;
+}
+
+#inputl,
+#inputm,
+#inputti,
+#inputte,
+#inputar,
+#inputvol,
+#inputspd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #cc98ff;
+  border-radius: 5%;
+  background-color: #2f2f2f;
+  color: #28e8a8;
+  font-family: Tw Cen MT;
+  font-size: 18px;
+}
+
+form {
+  text-align: center;
+  font-family: Tw Cen MT;
+  font-size: 20px;
+}
+
+#froml,
+#tol,
+#fromm,
+#tom,
+#fromti,
+#toti,
+#fromte,
+#tote,
+#fromar,
+#toar,
+#fromvol,
+#fromspd,
+#tovol,
+#tospd {
+  border: 4px solid #e9ef36;
+  border-radius: 13%;
+  background-color: #2f2f2f;
+  color: #3ff1f1;
+  font-family: Tw Cen MT;
+  font-size: 18px;
+}
+
+#ans,
+#ansm,
+#ansti,
+#anste,
+#ansar,
+#ansvol,
+#ansspd {
+  text-align: center;
+  text-align: center;
+  font-family: Tw Cen MT;
+  font-size: 18px;
+  color: #cc98ff;
+}
+
+#back {
+  height: 28px;
+  width: 50px;
+  border: 3px solid #cc98ff;
+  border-radius: 10%;
+  background-color: #2f2f2f;
+  color: #cc98ff;
+  font-family: Tw Cen MT;
+  font-size: 15px;
+}
